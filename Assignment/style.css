@@ -140,7 +140,7 @@ body {
 
 .menu .sub-menu {
     font-size: 15px;
-    padding: 5px;
+    padding: 10px;
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -156,8 +156,12 @@ body {
     margin-left: 2px;
 }
 
-.menu .active {   
+.mt {
     margin-top: 5px;
+}
+
+.menu .active {  
+    padding: 5px !important;
     color: black;
     font-weight: bold;
     background-color: rgb(241, 242, 243);

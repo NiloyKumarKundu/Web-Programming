@@ -211,7 +211,7 @@ body {
 
 /* Upper Body Start */
 
-.upper-body {
+.title {
     height: 50px;
     
     display: flex;
@@ -219,13 +219,13 @@ body {
     justify-content: space-between;
 }
 
-.upper-body h1 {
+.title h1 {
     font-weight: 100;
     font-family: sans-serif;
     color: rgb(61, 75, 87);
 }
 
-.upper-body input {
+.title input {
     padding: 10px;
     border: 1px solid rgb(66, 164, 247);
     background-color: rgb(53, 156, 247);
@@ -260,7 +260,27 @@ body {
 
 
 .main-body {
-    /* background-color: black; */
-    height: 100px;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.left-side {
+    background-color: skyblue;
+    flex-grow: 0.2;
+}
+
+
+.main-content {
+    background-color: pink;
+    flex-grow: 2;
+}
+
+.right-size {
+    background-color: #aaaaaa;
+    flex-grow: 0.6;
+}
+
+
+
+

@@ -469,6 +469,7 @@ body {
 .chat-box {
     margin-top: 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 12px;
+    border-radius: 5px;
 }
 
 .chat-box-header {
@@ -476,6 +477,7 @@ body {
     height: 40px;
     border: 1px solid rgb(221, 223, 225);
     border-bottom: 0px;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .chat-box-header h4 {
@@ -489,6 +491,7 @@ body {
     background-color: rgb(255, 255, 255);
     padding: 15px 22px;
     border: 1px solid rgb(221, 223, 225);
+    border-radius: 0px 0px 5px 5px;
 }
 
 .chat-box-body p {
@@ -500,7 +503,7 @@ body {
 .chat-box-body img {
     height: 30px;
     padding: 5px 0px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 

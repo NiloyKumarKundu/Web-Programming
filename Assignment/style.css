@@ -418,6 +418,7 @@ body {
     height: 35px;
     background-color: rgb(250, 242, 216);
     border: 1px solid rgb(241, 228, 193);
+    border-bottom: 0px;
 }
 .br-top {
     border-radius: 5px 5px 0px 0px;
@@ -434,6 +435,12 @@ body {
     padding: 5px  0px 15px 0px;
     background-color: rgb(252, 246, 228);
     border: 1px solid rgb(241, 228, 193);
+    border-bottom: 0px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgb(241, 228, 193) !important;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .blog .blog-post {

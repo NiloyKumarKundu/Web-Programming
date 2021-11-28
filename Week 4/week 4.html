@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StackOverlow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Open Sans;
+        }
+        #topbar {
+            display: flex;
+            background-color: lightgray;
+            border: 1px solid gray;
+            align-items: center;
+        }
+
+        #topbar>* {
+            margin: 10px;
+        }
+
+        #searchbar {
+            background-color: white;
+            border: 2px solid gray;
+            flex-grow: 1;
+            padding: 5px;
+        }
+
+        .login-btn {
+            background-color: lightblue;
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .signup-btn {
+            background-color: skyblue;
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+
+
+        #container {
+            display: flex;
+        }
+
+        #sidebar {
+            /* Flex basis is the dimention to the parallel to the flex direction */
+            flex-basis: 100px;
+        }
+
+        #content {
+            flex-grow: 1;
+        }
+
+        #content>div>div {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #content>div:nth-child(2) {
+            display: flex;
+
+        }
+
+        #content>div:nth-child(2) .col1 {
+            flex-basis: 50px;
+        }
+
+        #content>div:nth-child(2) .col2 {
+            flex-grow: 1;
+
+        }
+
+        #content>div:nth-child(2) .col3 {
+            flex-basis: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="topbar">
+        <span>StackOverflow</span>
+        <span>About</span>
+        <span>Product</span>
+        <span>For Team</span>
+        <div id="searchbar">
+            <i class="search icon"></i>
+            <span>Search...</span>
+
+        </div>
+        <span class="login-btn">Login</span>
+        <span class="signup-btn">Sign Up</span>
+    </div>
+
+    <div id="container">
+        <div id="sidebar">
+            Home
+        </div>
+
+        <div id="content">
+            <div>
+                <div>
+                    <div>
+                        <h2>How to use Flexbox?</h2>
+                        <small>Asked 5 years ago</small>
+                    </div>
+                    <span class="signup-btn">
+                        Aks Question
+                    </span>
+                </div>
+            </div>
+            <div>
+
+                <div class="col1">^</div>
+                <div class="col2">
+                    I have a layout like this
+                </div>
+                <div class="col3">Right Sidebar</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

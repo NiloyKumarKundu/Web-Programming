@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Hello World</h2>
+    <button id="login-btn" onclick="">Login</button>
+
+
+    <script>
+        // console.log("Hello World");
+        // let name = prompt("Please enter your name:");
+        // console.log("Welcome to the class, " + name);
+
+        // for (let i = 1; i <= 10; i++) {
+        //     if (i == 4) {
+        //         console.log("Unlucky number!");
+        //     } else {
+        //         console.log(i);
+        //     }
+        // }
+
+        function login() {
+            let pass = "123";
+            let givenPass = prompt("Enter Password: ");
+            if (pass == givenPass) {
+                alert("Congratulations, you have succesfully logged in!");
+                let header = document.querySelector('h2');
+                header.innerHTML = "<h2>Welcome, <span style='color: red;'>User!</span>";
+
+            } else {
+                alert("Wrong password!");
+            }
+        }
+
+        let btn = document.querySelector('#login-btn');
+        // btn.addEventListener('click', login);       // first class function
+        btn.addEventListener('click', login);
+    </script>
+</body>
+
+</html>

@@ -26,7 +26,24 @@
         //     }
         // }
 
-        function login() {
+        // function login() {
+        //     let pass = "123";
+        //     let givenPass = prompt("Enter Password: ");
+        //     if (pass == givenPass) {
+        //         alert("Congratulations, you have succesfully logged in!");
+        //         let header = document.querySelector('h2');
+        //         header.innerHTML = "<h2>Welcome, <span style='color: red;'>User!</span>";
+
+        //     } else {
+        //         alert("Wrong password!");
+        //     }
+        // }
+
+        let btn = document.querySelector('#login-btn');
+        // btn.addEventListener('click', login);       // first class function
+        // btn.addEventListener('click', login);
+
+        btn.addEventListener('click', () => {
             let pass = "123";
             let givenPass = prompt("Enter Password: ");
             if (pass == givenPass) {
@@ -37,11 +54,7 @@
             } else {
                 alert("Wrong password!");
             }
-        }
-
-        let btn = document.querySelector('#login-btn');
-        // btn.addEventListener('click', login);       // first class function
-        btn.addEventListener('click', login);
+        })
     </script>
 </body>
 

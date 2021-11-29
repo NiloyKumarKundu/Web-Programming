@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js 2</title>
+</head>
+<body>
+
+    <script>
+        // let s1 = "Hello world"
+        // console.log(s1);
+        // // In js string is a object
+        // console.log(s1.length);
+        // // length is a property
+        // console.log(s1.toUpperCase());
+        // console.log(s1[0]);
+        // console.log(s1[s1.length - 1]);
+        // console.log(s1.slice(1));
+        // console.log(s1.slice(1, 4));
+        // console.log(s1.repeat(5));
+        // console.log(s1.replace("ll", "Hello"));
+        // console.log(s1.split(' ')); // convert the string into an array
+        // console.log(s1.split(''));  // all the letters
+
+        // let arr = [10, 20, 'A', 2.5];
+        // // console.log(arr);
+        // // arr.push(50);
+        // // console.log(arr);
+        // // let a = arr.pop();
+        // // let b = arr.pop();
+        // // console.log(arr + "\n a = " + a + " b = " + b);
+        // // console.log(arr);
+        // arr.shift();               // remove element from the front of the array
+        // console.log(arr);
+        // arr.unshift(5);           // add element in the front of the array
+        // arr.unshift(1); 
+        // console.log(arr);
+
+        // includes() -> present a item or not
+
+        let arr2 = [10, 30, 20, 40, 50, 60, 100];
+        // arr2.sort();            // It sort the element in lexicographycally
+        // console.log(arr2);
+
+        // arr2.splice(2, 1);       // add or remove element in an array
+        // // splice (index we want to work, from this index we want to delete items)
+        // console.log(arr2);
+        // let x = arr2.splice(1, 2);
+        // console.log(arr2);
+        // console.log(x);
+
+        // arr2.splice(2, 2, 'a', 'b');        // Add items with removing the item
+        // console.log(arr2);
+        // arr2.splice(2, 0, 'a', 'b');        // Add items without removing the item
+        // console.log(arr2);
+
+        // // join() -> array -> string
+        // console.log(arr2.join('-'))
+
+        // string -> array => split; array -> string => join
+
+
+        // function add(x, y) {
+        //     return x + y;
+        // }
+
+        // console.log(add(10, 20));
+
+        // let add2 = function add(x, y) {             // Annonymous function
+        //     return x + y;
+        // }
+        
+        // console.log(add2(10, 20));
+
+        // let add3 = (x, y) => {             // Annonymous function without name /// modified version 
+        //     return x + y;
+        // }
+        // console.log(add3(10, 40));
+
+        // let add4 = (x, y) => x + y;             // Lamda function /// bare minimum
+        // console.log(add4(40, 20));
+
+        
+        // arr2.sort((a, b) => {
+        //     if (a > b) {
+        //         return 1;
+        //     } else if (a < b) {
+        //         return -1;
+        //     } else {
+        //         return 0;
+        //     }
+        // });
+        // console.log(arr2);
+
+
+// Filter
+        // let x = arr2.filter((arg) => {
+        //     if (arg > 40) {
+        //         return true;
+        //     } else {
+        //         return false;
+        //     }
+        // })
+        // console.log(arr2);
+        // console.log(x);
+
+        // // insted of doing this, we will do
+
+        // x = arr2.filter((arg) =>(arg > 40));
+        // console.log(arr2);
+        // console.log(x);
+
+// Map
+
+        // let x = arr2.map((arg) => (arg * 2));
+        // console.log(arr2);
+        // console.log(x);
+
+// Some
+        // let x = arr2.some((arg) => arg > 30);
+        // console.log(x);
+
+// every
+        // let x = arr2.every((arg) => arr > 30);
+        // console.log(x);
+
+//  For each 
+            // arr2.forEach((arg) => {
+            //     if (arg % 3 == 0) {
+            //         console.log(arg + " can be divided by 3");
+            //     } else {
+            //         console.log(arg + " Not of our interested");
+            //     }
+            // });
+            // console.log(arr2);
+
+            // arr2.forEach((arg) => arg % 3 ? console.log(arg + " can be divided by 3") : console.log(arg + " Not of our interested"));
+
+            let a = "Md. Saiful Islam";
+            let b = a.split(' ');
+            let ans = b[0][0] + "." + b[1][0] + "." + b[2][0];
+            let x = b.map((arg) => arg[0] + '.').join("");
+            console.log(x);
+
+            b.forEach((arg) => console.log(arg[0] + '.'));
+
+
+
+        
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <p>Box1</p>
+        <p>Box2</p>
+    </div>
+    <div>
+        <span>Box3</span>
+        <span>Box4</span>
+        <span>Box5</span>
+    </div>
+
+    <script>
+        let p = document.querySelector('p');
+        p.innerHTML = "Box1 Changed";
+        p.style.color = 'Red';
+        p.style.backgroundColor = 'yellow';
+        p.nextElementSibling.style.color = 'blue';
+        p.parentNode.nextElementSibling.firstElementChild.style.color = 'yellow';
+        p.parentNode.nextElementSibling.firstElementChild.nextElementSibling.style.color = 'green';
+
+    </script>
+</body>
+
+</html>

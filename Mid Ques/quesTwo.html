@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div>
+        <input type="text">
+        <input type="button" value="Process input">
+    </div>
+    <div>
+        <h1>Small Words</h1>
+        <p id="p1"></p>
+    </div>
+
+    <div>
+        <h1>Big Words</h1>
+        <p id="p2"></p>
+    </div>
+
+
+
+    <script>
+        document.querySelector('input[type="button"]').addEventListener('click', () => {
+            let inpt = document.querySelector('input').value;
+            document.querySelector('input').value = "";
+            let str = inpt.split(', ');
+            console.log(str);
+
+            let small = str.filter((arg) => arg.length < 6);
+            let big = str.filter((arg) => arg.length >= 6);
+
+            document.querySelector('#p1').innerHTML = small.join(', ');
+            document.querySelector('#p2').innerHTML = big.join(', ');
+        });
+    </script>
+</body>
+</html>

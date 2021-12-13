@@ -21,8 +21,6 @@
             <th>Operations</th>
         </thead>
         <tbody>
-            
-
         </tbody>
     </table>
 
@@ -44,13 +42,14 @@
             document.querySelectorAll('.delete').forEach(arg => {
                 arg.addEventListener('click', (e) => {
                     let item = e.target.parentNode.previousElementSibling.innerHTML;
+                    // arr = ['test1', test2, test3]
+                    // item = test2
                     if (confirm("Are you sure you want to delete?")) {
                         task_list = task_list.filter(arg => arg != item);
                         refresh();
                     }
                 })
             })
-
 
             document.querySelectorAll('.edit').forEach(arg => {
                 arg.addEventListener('click', (e) => {

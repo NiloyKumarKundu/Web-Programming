@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google Drive</title>
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"> -->
+	<style>
+		* {
+			padding: 0px;
+			margin: 0px;
+		}
+		body {
+			font-family: Arial;
+		}
+		.topbar {
+			padding: 10px;
+			display: flex;
+			align-items: center ;
+		}
+		.topbar h2 {
+			color: gray;
+			font-weight: normal;
+		}
+		.topbar + hr {
+			opacity: .5;
+		}
+		.sidebar {
+			width: 200px;
+			/*background-color: pink;*/
+			height: 500px;
+		}
+		.button {
+			display: flex;
+			align-items: center;
+			border: 1px solid lightgray;
+			width: 100px;
+			padding: 10px;
+			border-radius: 50px;
+			margin: 10px;
+			box-shadow: 0 2px 4px 1px lightgray;
+		}
+		.button h4 {
+			flex-grow: 1;
+			text-align: center;
+			color: gray;
+			font-weight: bold;
+		}
+		.menubar {
+			display: flex;
+			flex-direction: column;
+		}
+		.menubar .item {
+			display: flex;
+			align-items: center;
+		}
+		.menubar .item img {
+			margin: 5px;
+		}
+		.active {
+			background-color: rgb(232, 240, 254);
+			color: rgb(69, 135, 244);
+			font-weight: bold;
+			border-top-right-radius: 30px;
+			border-bottom-right-radius: 30px;
+		}
+	</style>
+</head>
+<body>
+
+<div class="topbar">
+	<img src="drive.png">
+	<h2>Drive</h2>
+</div>
+<hr>
+<div class="sidebar">
+	<div class="button">
+		<img src="plus.png">
+		<h4>New</h4>
+	</div>
+
+	<div class="menubar">
+		<div class="item">
+			<img src="tick.png">
+			<p>Priority</p>
+		</div>
+		<div class="active item">
+			<img src="tick.png">
+			My Drive
+		</div>
+		<div class="item">
+			<img src="tick.png">
+			Shared with me
+		</div>
+		<div class="item">
+			<img src="tick.png">
+			Recent
+		</div>
+		<div class="item">
+			Starred
+		</div>
+		<div class="item">
+			Trash
+		</div>
+		<div class="item">
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
